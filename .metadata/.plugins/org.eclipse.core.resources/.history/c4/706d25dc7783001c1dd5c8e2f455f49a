@@ -1,0 +1,11 @@
+
+public class TestaFuncionario {
+
+	public static void main(String [] args) {
+		
+		Funcionario malu = new Funcionario(); //vale lembrar que malu é a referência, por isso precisamos dar nome, cpf...
+		malu.setCpf("123456");
+		malu.setSalario("5500");
+		
+	}
+}

@@ -1,0 +1,12 @@
+
+public class TestaContaSemCliente {
+
+	public static void main(String[] args) {
+		Conta contaDaLuana = new Conta(); //é uma referência
+		System.out.println(contaDaLuana.saldo);
+		
+		System.out.println(contaDaLuana.titular);
+		contaDaLuana.titular.nome = "Luana";
+		System.out.println(contaDaLuana.titular.nome);
+	}
+}

@@ -1,0 +1,8 @@
+package bytebank;
+//isso é uma especificação de conta, mas não uma conta em si
+public class Conta {  //4 atributos
+	double saldo; 
+	int agencia; 
+	int numero;
+	String titular;
+}

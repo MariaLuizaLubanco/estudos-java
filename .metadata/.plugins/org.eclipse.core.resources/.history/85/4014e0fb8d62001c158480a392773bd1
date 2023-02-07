@@ -1,0 +1,37 @@
+
+public class TestaCondicional2 {
+
+	public static void main(String[] args) {
+		System.out.println("Testando condicionais");
+		int idade = 16;
+		int quantidadePessoas = 1;
+		
+		if (idade >= 18 || quantidadePessoas >= 2) { //|| significa "ou"
+			System.out.println("Seja bem vindo!");
+		} else {
+			System.out.println("Infelizmente, você não pode entrar");
+			}
+		
+		int idade2 = 19;
+		int quantidadePessoas2 = 2;
+		
+		if (idade2 >= 18 && quantidadePessoas2 >= 2) { //&& significa "e"
+			System.out.println("Seja bem vindo!");
+		} else {
+			System.out.println("Infelizmente, você não pode entrar");
+		}
+		
+		int idade3 = 20;
+		boolean acompanhado = true; //boolean é usado apenas para True e False
+		
+		if (idade2 >= 18 && acompanhado == true) { /*== significa "equivalente", pois = apenas atribui o que está na direita dentro
+			da esquerda. Contudo, o mais comum de ser escrito é apenas (idade >= 18 && acompanhado) { */
+			System.out.println("Seja bem vindo!");
+		} else {
+			System.out.println("Infelizmente, você não pode entrar");
+		}
+	}
+}
+
+
+

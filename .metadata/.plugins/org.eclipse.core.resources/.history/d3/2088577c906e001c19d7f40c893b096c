@@ -1,0 +1,7 @@
+
+public class Conta {
+	double saldo;
+	int agencia;
+	int numero;
+	Cliente titular; //o tipo da variável precisa ser igual ao nome da classe criada, que no caso é Cliente
+}

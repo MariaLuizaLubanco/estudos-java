@@ -1,0 +1,22 @@
+package bytebank;
+
+public class TestaMetodo {
+
+	public static void main(String[] args) {
+		Conta contaDaMalu = new Conta(); //contaDaMalu é a variável, nome igual ao da classe Conta. Poderia se chamar só conta
+		contaDaMalu.saldo = 100;
+		contaDaMalu.deposita(50);
+		System.out.println(contaDaMalu.saldo);
+		
+		boolean conseguiuRetirar = contaDaMalu.saca(20);
+		System.out.println(contaDaMalu.saldo);
+		System.out.println(conseguiuRetirar);
+		
+		Conta contaDoPaulo = new Conta();
+		contaDoPaulo.deposita(1000);
+		
+		contaDoPaulo.transfere(300, contaDaMalu); //a origem da transferência é a contaDaMalu, que na classe Conta é a referência this
+		System.out.println(contaDoPaulo.saldo);
+		System.out.println(contaDaMalu.saldo);
+	}
+}

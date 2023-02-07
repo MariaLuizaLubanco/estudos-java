@@ -1,0 +1,20 @@
+package orientacaoObjeto;
+
+public class CriaContaOk {
+	
+	public static void main(String[] args) {
+		Conta primeiraConta = new Conta(); //o primeiro Conta é a nossa referência, tornando-se uma variável. É oriunda da classe 
+		//Conta.java, enquanto o new cria o objeto
+		primeiraConta.saldo = 200; //o ponto simboliza o direcionamento do cógido para o objeto, ele faz referência do objeto ao
+		//código
+		System.out.println("Primeira conta tem " + primeiraConta.saldo);
+		
+		primeiraConta.saldo += 100;
+		System.out.println(primeiraConta.saldo);
+		
+		
+		Conta segundaConta = new Conta();
+		segundaConta.saldo = 50;
+		System.out.println("Segunda conta tem " + segundaConta.saldo);
+	}
+}

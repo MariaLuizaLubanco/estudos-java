@@ -1,0 +1,12 @@
+package bytebank;
+
+public class TestaMetodo {
+
+	public static void main(String[] args) {
+		Conta contaDaMalu = new Conta(); //contaDaMalu é a variável, nome igual ao da classe Conta. Poderia se chamar só conta
+		contaDaMalu.saldo = 100;
+		contaDaMalu.deposita(50);
+		System.out.println(contaDaMalu.saldo);
+		contaDaMalu.saca(20);
+	}
+}

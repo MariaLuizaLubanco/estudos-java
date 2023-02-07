@@ -1,0 +1,10 @@
+//ponto flutuante é o decimal
+public class TestaPontoFlutuante {
+
+		public static void main(String[] args) {
+			
+			double salario;
+			salario = 1250.70; //decimal no java é com ponto e não vírgula!
+			System.out.println("Meu salário é " + salario);
+		}
+}

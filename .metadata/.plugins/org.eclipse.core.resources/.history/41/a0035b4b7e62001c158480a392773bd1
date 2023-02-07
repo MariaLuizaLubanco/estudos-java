@@ -1,0 +1,30 @@
+//ponto flutuante é o decimal
+public class TestaPontoFlutuante {
+
+		public static void main(String[] args) {
+			
+			double salario; //no double, cabe variáveis do tipo inteiro, mas o contrário não é válido.
+			salario = 1250.70; //decimal no java é com ponto e não vírgula!
+			System.out.println("Meu salário é " + salario);
+			
+			double divisao = 3.14 / 2; /*a partir de agora, não preciso declarar e iniciar a variável em momentos diferentes, basta 
+			fazer de uma vez --> double divisao = ***; */
+			System.out.println(divisao);
+			
+			int outraDivisao = 5 / 2;
+			System.out.println(outraDivisao);
+			//como os números que estão sendo divididos são inteiros, o java fará a divisão, mas tornará a resposta em um tipo inteiro
+			
+			double novaTentativa = 5 / 2;
+			System.out.println(novaTentativa);
+			/*o java lê da direita para a esquerda, ou seja, primeiro 5 / 2. Como ambos são números inteiros, ele segue o princípio
+			da outraDivisao, sendo o resultado igual a 2. Depois disso, ele lerá a parte esquerda, na qual exige que o resultado seja
+			em double (com decimal). Dessa forma, ele transformará o resultado já obtido da equação com números inteiros, e
+			transformará em um número decimal, adicional o ponto e o número zero, formando 2.0 */
+			
+			double tentativaDivisao = 5.0 / 2;
+			System.out.println(tentativaDivisao);
+			/*para resolver o problema anterior, fazendo com que o java apresente o resultado correto da divisão, basta tornar um 
+			dos números da divisão em um número decimal, sendo um double dividido por um inteiro, sendo a resposta um ponto flutuante */
+		}
+}

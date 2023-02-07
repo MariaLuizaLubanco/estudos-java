@@ -1,0 +1,17 @@
+//ponto flutuante é o decimal
+public class TestaPontoFlutuante {
+
+		public static void main(String[] args) {
+			
+			double salario; //no double, cabe variáveis do tipo inteiro, mas o contrário não é válido.
+			salario = 1250.70; //decimal no java é com ponto e não vírgula!
+			System.out.println("Meu salário é " + salario);
+			
+			double divisao = 3.14 / 2;
+			System.out.println(divisao);
+			
+			int outraDivisao = 5 / 2;
+			System.out.println(outraDivisao);
+			//como os números que estão sendo divididos são inteiros, o java fará a divisão, mas tornará a resposta em um tipo inteiro
+		}
+}

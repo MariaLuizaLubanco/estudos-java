@@ -1,0 +1,30 @@
+
+public class TestaGerente {
+
+	public static void main(String [] args) {
+		
+		FuncionarioAutenticavel referencia = new Gerente(); //o mesmo código é válido para administrador e cliente
+	  //FuncionarioAutenticavel referencia = new Administrador();
+	  //FuncionarioAutenticavel referencia = new Cliente();
+
+		
+		Gerente g1 = new Gerente();
+		g1.setNome("Malu"); //esses 3 métodos são herdados da classe Funcionario
+		g1.setCpf("2141652");
+		g1.setSalario(5000);
+		
+		System.out.println(g1.getNome());
+		System.out.println(g1.getCpf());
+		System.out.println(g1.getSalario());
+		
+		g1.setSenha(2222); //com esta linha, a senha abaixo é true, pois nós a alteramos antes
+		boolean autenticou = g1.autentica(2222); //o método autentica vem da classe Gerente
+		
+		System.out.println(autenticou); //retornará false porque não é a senha correta, como descrita na classe Gerente (quando não
+		//é dado um valor para o atributo, então ele será 0. Caso queira deixar uma senha específica, basta voltar na classe Gerente
+		//e escrever, por exemplo, private int senha = 123; CORREÇÃO: COMO FOI ATRIBUIDO O VALOR 2222 A SENHA, SERÁ TRUE PARA AUTENTICACAO
+		
+		System.out.println(g1.getBonificacao());
+		
+	}
+}

@@ -1,0 +1,7 @@
+
+public class ContaCorrente extends Conta { //não é herdado construtores, pois eles são da classe e não são herdados para os filhos
+	
+	public ContaCorrente() {
+		super();
+	}
+}

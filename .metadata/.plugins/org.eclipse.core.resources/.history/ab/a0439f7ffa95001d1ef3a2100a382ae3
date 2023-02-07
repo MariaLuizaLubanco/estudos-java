@@ -1,0 +1,17 @@
+
+public class TestaBanco {
+	
+	public static void main(String[] args) {
+		Cliente malu = new Cliente();
+		malu.nome = "Malu Lubanco";
+		malu.cpf = "222.222.222-22";
+		malu.profissao = "Programador";
+		
+		Conta contaDaMalu = new Conta();
+		contaDaMalu.deposita(100);
+		
+		contaDaMalu.titular = malu;
+		System.out.println(contaDaMalu.titular.nome);//somente contaDaMalu.titular mostraria "???". Ao adicionar .nome, faz referência
+		//à classe Cliente
+	}
+}

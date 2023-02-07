@@ -1,0 +1,22 @@
+package bytebank;
+//isso é uma especificação de conta, mas não uma conta em si
+public class Conta {  //4 atributos
+	double saldo; 
+	int agencia; 
+	int numero;
+	String titular;
+	
+	public void deposita(double valor) { //void é utilizado quando o método não devolve uma resposta
+		this.saldo = this.saldo + valor; //this é uma referência ao objeto conta específica
+	}
+	
+	public boolean saca(double valor){
+		if(this.saldo >= valor) {
+			this.saldo = this.saldo - valor;
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+

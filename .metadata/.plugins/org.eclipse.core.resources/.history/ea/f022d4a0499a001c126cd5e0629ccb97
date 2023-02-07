@@ -1,0 +1,6 @@
+
+//Assim como quando herdamos uma classe devemos escrever extends, quando fazemos referência a uma interface, escrevemos implements
+
+public class Cliente implements FuncionarioAutenticavel {
+
+}

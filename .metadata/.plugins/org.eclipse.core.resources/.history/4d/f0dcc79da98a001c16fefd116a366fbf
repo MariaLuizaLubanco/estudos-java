@@ -1,0 +1,13 @@
+
+public class ContaCorrente extends Conta { //não é herdado construtores, pois eles são da classe e não são herdados para os filhos
+	
+	public ContaCorrente(int agencia, int numero) {
+		super(agencia, numero);
+		
+		@Override
+		public boolean saca(double valor) {
+			double valorASacar = valor + 0.2;
+			return super.saca(valorASacar);
+		}
+	}
+}

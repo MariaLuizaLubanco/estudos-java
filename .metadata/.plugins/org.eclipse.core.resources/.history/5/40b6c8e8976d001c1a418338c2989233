@@ -1,0 +1,11 @@
+package orientacaoObjeto;
+
+public class CriaContaOk {
+	
+	public static void main(String[] args) {
+		Conta primeiraConta = new Conta();
+		primeiraConta.saldo = 200; //o ponto simboliza o direcionamento do cógido para o objeto, ele faz referência do objeto ao
+		//código
+		System.out.println(primeiraConta.saldo);
+	}
+}

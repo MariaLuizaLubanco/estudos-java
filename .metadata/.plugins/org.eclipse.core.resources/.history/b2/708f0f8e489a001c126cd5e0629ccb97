@@ -1,0 +1,16 @@
+
+public abstract class FuncionarioAutenticavel { //uma interface é uma classe abstrata com todos os métodos abstratos
+	//ou seja, não há nada concreto.
+	
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+	
+	public boolean autentica(int senha) {
+		if(this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}

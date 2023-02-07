@@ -1,0 +1,33 @@
+//Gerente é um Funcionario, Gerente herda da classe Funcionario, assina o contrato FuncionarioAutenticavel
+public class Gerente extends Funcionario implements FuncionarioAutenticavel { //extends Funcionario é um comando para a casse Gerente herdar tudo o que tem na classe Funcionario
+	
+	private AutenticacaoUtil autenticador;
+	
+	public Gerente() {
+		this.autenticador = new AutenticacaoUtil();
+	}
+	
+	//public double getBonificacao() {
+		//System.out.println("Chamando método de bonificacao do gerente");
+		//return super.getSalario();
+		//return super.getBonificacao() + super.getSalario(); //a necessidade de escrever super. antes do salário é para indicar que o salário
+		//não é desta classe, ou seja, não é this.salario, mas sim, da classe super/classe mãe (esse atributo é proveniente da classe
+		//Funcionario.
+		//Ao escrever super.getBonificacao() + super.getSalario(), estamos fazendo referência à bonificação da classe Funcionário e somando
+		//com o valor do salario do gerente (o super do salario é para fazer referência ao atributo herdado da classe Funcionário, mas 
+		//como está sendo escrito nesta classe, é o salário do gerente que aparecerá. É importante fazer essa distinção, pois a bonifi
+		//cação é diferente para funcionários e gerentes. Caso escrevesse return (this.salario * 0.1) + super.getSalario() nesta classe e 
+		//houvesse uma alteração na bonificação da classe Funcionário, indo, por exemplo, para 5%, não seria atualizado aqui, pois o
+		//código foi reescrito.
+	
+
+	@Override
+	public void setSenha(int senha) {
+		this.autenticador.setSenha(senha);
+	}
+
+	@Override
+	public boolean autentica(int senha) {
+		return this.autenticador.autentica(senha);
+	}
+}

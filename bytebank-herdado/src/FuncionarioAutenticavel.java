@@ -1,0 +1,12 @@
+
+/*Uma interface é uma classe abstrata com todos os métodos abstratos. Ou seja, não há nada concreto. A interface é um contrato. 
+Sendo assim, quem assina esse contrato precisa implementar:
+	- método setSenha
+	- método autentica
+A interface é como um contrato que define as obrigações, o que precisa estar nas outras classes. */
+public abstract interface FuncionarioAutenticavel { 
+	
+	public abstract void setSenha(int senha); //abstract nunca pode atribuir algo
+	
+	public abstract boolean autentica(int senha);
+}
